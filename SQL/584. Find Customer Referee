@@ -1,0 +1,5 @@
+-- Write your PostgreSQL query statement below
+SELECT name FROM Customer
+WHERE referee_id != 2 OR referee_id is null;
+
+!= is the not equal operator, null values are not included within the not equal therefore a condition for the null values is needed
