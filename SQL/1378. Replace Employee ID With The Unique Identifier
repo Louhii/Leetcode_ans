@@ -1,0 +1,8 @@
+# Write your MySQL query statement below
+SELECT unique_id, name FROM Employees
+LEFT JOIN EmployeeUNI ON Employees.id = EmployeeUNI.id
+
+
+SELECT chooses the two columns to return (id and name) from employees table.
+
+The left Join from UNI checks to make sure all rows are found in both, and if not it is returned as a null value
