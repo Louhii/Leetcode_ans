@@ -1,0 +1,2 @@
+SELECT DISTINCT MAX(Salary) AS SecondHighestSalary FROM Employee //- Selects unique MAX Salary from the table
+WHERE Salary < (SELECT MAX(Salary) FROM Employee) //- Selects the salary underneath the max salary (results in second highest salary)
