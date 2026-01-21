@@ -1,0 +1,5 @@
+SELECT P.firstName, P.lastName, A.city, A.state FROM Person P
+LEFT JOIN Address A ON P.personID = A.personID
+
+
+Left Join returns all values from Table 1, in this case Person P, and all matching records for Table 2 (Address)
