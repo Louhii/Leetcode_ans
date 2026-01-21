@@ -1,0 +1,5 @@
+SELECT email FROM Person
+GROUP BY email
+HAVING Count (email)> 1
+
+Selecting emails where the count of that email is more than 1 (duplicates)
