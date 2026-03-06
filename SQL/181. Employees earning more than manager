@@ -1,0 +1,7 @@
+SELECT e.name AS Employee
+FROM Employee E
+INNER JOIN Employee M
+ON e.managerID = m.id
+WHERE e.salary > m.salary
+
+INNER JOINing the table allows you to correlate/compare values from the same table easily, seperating employee from manager and allowing you to compare the salary of these fields.
