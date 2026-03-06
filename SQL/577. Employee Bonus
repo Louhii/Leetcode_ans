@@ -1,0 +1,7 @@
+SELECT E.name, B.bonus
+FROM Employee E
+LEFT JOIN Bonus B ON E.empId = B.empId
+WHERE Bonus < 1000 OR Bonus is NULL
+
+
+Have to use left join to include people whos bonus' are null
