@@ -1,0 +1,6 @@
+SELECT TOP 1 customer_number FROM Orders
+GROUP BY customer_number
+ORDER BY COUNT(*) DESC
+
+
+Query groups then orders customer_number by the highest number of orders. The Select statement only pulls the TOP 1 of the query, which in this case would be the highest number of orders
